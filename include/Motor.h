@@ -39,6 +39,6 @@ class Motor
     void setSpeed(short int speed);
 };
 
-#include "Motor.cpp"
+#include "../lib/Motor.cpp"
 
 #endif

@@ -1,4 +1,5 @@
-#include "Sensor.h"
+#include <Arduino.h>
+#include "../include/Sensor.h"
 
 // Constructor
 Sensor::Sensor(Mode mode, int pin)
@@ -80,5 +81,3 @@ Mode Sensor::getMode()
 {
     return this->mode;
 }
-}
-;

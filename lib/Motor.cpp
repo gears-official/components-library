@@ -1,4 +1,5 @@
-#include "Motor.h"
+#include <Arduino.h>
+#include "../include/Motor.h"
 
 ////////////////////////////////////
 //           Constructor

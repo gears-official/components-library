@@ -12,7 +12,7 @@ class Sensor
 {
   private:
       int pin;
-      Mode mode
+      Mode mode;
   public:
       // Constructor      
       Sensor(Mode mode, int pin);
@@ -67,6 +67,6 @@ class Sensor
       Mode getMode();
 };
 
-#include "./Sensor.cpp"
+#include "../lib/Sensor.cpp"
 
 #endif
