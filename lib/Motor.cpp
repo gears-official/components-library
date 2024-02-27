@@ -29,6 +29,12 @@ void Motor::farward()
     digitalWrite(pos, HIGH);
     digitalWrite(neg, LOW); 
 }
+void Motor::farward(int speed)
+{
+    digitalWrite(pos, HIGH);
+    digitalWrite(neg, LOW); 
+    analogWrite(speedControl,speed); 
+}
 
 ////////////////////////////////////
 //           backward()
@@ -37,6 +43,12 @@ void Motor::backward()
 {
     digitalWrite(pos, LOW);
     digitalWrite(neg, HIGH); 
+}
+void Motor::backward(int speed)
+{
+    digitalWrite(pos, LOW);
+    digitalWrite(neg, HIGH); 
+    analogWrite(speedControl,speed); 
 }
 
 ////////////////////////////////////
